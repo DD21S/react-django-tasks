@@ -6,4 +6,52 @@ This application allows you to create, read, update and delete (CRUD) tasks to b
 
 ## Quickstart
 
-In progress...
+First of all, clone this repo.
+
+``
+git clone https://github.com/DD21S/react-django-tasks.git
+``
+
+Then, in the project directory, you install the requirements.
+
+``
+pip install -r requirements.txt
+``
+
+Now, make the migrations.
+
+``
+python3 manage.py migrate
+``
+
+And finally, run the project.
+
+``
+python3 manage.py runserver
+``
+
+Ready, now your API is running :&#41;
+
+---
+
+It's recommended to use a virtual enviroment to run Python web applications.
+
+Create one with this command:
+
+``
+python3 -m venv venv
+``
+
+---
+
+[Here](https://github.com/DD21S/react-django-tasks/tree/main/frontend#getting-started-with-create-react-app) you will find info about the frontend.
+
+## API Routes
+
+| **METHOD**  | **ROUTE**                | **FUNCTIONALITY**   | **ACCESS**  |
+| ----------- | ------------------------ | ------------------- | ----------- |
+| **GET**     | /api/tasks/              | List tasks          | All         |
+| **GET**     | /api/tasks/:id			 | Details task        | All         |
+| **POST**    | /api/tasks/              | Create a new task   | All         |
+| **PATCH**   | /api/tasks/:id           | Update task	       | All         |
+| **DELETE**  | /api/tasks/:id           | Delete task         | All         |
