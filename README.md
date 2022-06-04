@@ -12,7 +12,7 @@ First of all, clone this repo.
 git clone https://github.com/DD21S/react-django-tasks.git
 ```
 
-Then, in the project directory, you install the requirements.
+Then, in the project directory, install the requirements.
 
 ```
 pip install -r requirements.txt
